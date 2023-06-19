@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link rel="stylesheet" href="/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet"/>
+<!--  <div th:replace="/fragment/link :: link"/>-->
+</head>
+<body>
+<div id="root">
+    <div th:replace="/fragment/header :: html" />
+    <div class="wrapper">
+        <main id="main">
+            <form method="post" id="frm" action="/loginOk" class="container">
+                <section class="signin-wrapper" style="height: auto;">
+                    <div class="__inner">
+                        <div class="css-o5dw7d">
+                            로그인
+                        </div>
+                        <div class="input-control mb-30">
+                            <input type="text" class="form-input form-input-underline" id="memId" name="memId"
+                                   placeholder="아이디를 입력하세요." autocomplete="off" value="">
+                        </div>
+                        <div class="input-control mb-30">
+                            <input type="password" id="memPw" name="memPw" class="form-input form-input-underline"
+                                   placeholder="비밀번호를 입력하세요" autocomplete="off" value="">
+                            <!-- <button type="button" class="hide-password ">패스워드보이기</button> -->
+                        </div>
+                        <div id="signin-extra-block">
+                            <div class="signin-extra mt-35 mb-35">
+                                <a href="join" class="color-gray underline">회원가입</a>
+                            </div>
+                            <div class="signin-extra mt-35 mb-35">
+                                <a href="/findPassword" class="color-gray underline">비밀번호 찾기</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="sticky-bottom-btns pb-68 display-none-with-aos-keyboard login-btn">
+                    <button id="loginBtn" class="btn btn-lg btn-red full-width login-btn">
+                        <strong class="bold">로그인</strong>
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <div th:replace="/fragment/footer :: html" />
+</div>
+<script src="/js/login.js"></script>
+</body>
+</html>

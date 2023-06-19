@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/scsquad?serverTimezone=Asia/Seoul
+    username: biblia
+    password: 1234
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  thymeleaf3:
+    decoupled-logic: true
+  #  servlet:
+  #    multipart:
+  #      max-file-size: 200MB
+  #      max-request-size: 100MB
+  #      location: /home/ec2-user/catchMind/photo/
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9999
+

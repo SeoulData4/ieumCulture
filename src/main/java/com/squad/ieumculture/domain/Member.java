@@ -5,10 +5,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
+import lombok.Getter;
 import lombok.ToString;
 
 @Entity
-@Data
+@Getter
 @ToString(callSuper = true)
 public class Member extends AuditingFields{
     @Id

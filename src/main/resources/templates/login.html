@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인</title>
+  <title>문화를 잇다. 이음</title>
+    <div th:replace="/fragment/link :: link"></div>
   <link rel="stylesheet" href="/css/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"  rel="stylesheet"/>
-<!--  <div th:replace="/fragment/link :: link"/>-->
 </head>
 <body>
 <div id="root">
-    <div th:replace="/fragment/header :: html" />
-    <div class="wrapper">
+    <div th:replace="/fragment/header :: #header" />
+    <div th:replace="/fragment/header :: .searchArea" />
+    <div class="container">
         <main id="main">
-            <form method="post" id="frm" action="/loginOk" class="container">
+            <form method="post" id="frm" action="/loginOk">
                 <section class="signin-wrapper" style="height: auto;">
                     <div class="__inner">
                         <div class="css-o5dw7d">
@@ -47,7 +47,7 @@
             </form>
         </main>
     </div>
-    <div th:replace="/fragment/footer :: html" />
+    <div th:replace="/fragment/footer :: #footer" />
 </div>
 <script src="/js/login.js"></script>
 </body>

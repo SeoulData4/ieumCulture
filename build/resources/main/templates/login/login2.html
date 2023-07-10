@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/" xmlns:sec="http://www.w3.org/1999/xhtml"></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문화를 잇다. 이음</title>
+    <link rel="stylesheet" href="/css/loginStyle.css">
+    <div th:replace="/fragment/link :: link"></div>
+</head>
+
+<!--header 넣을곳-->
+
+<!--header 넣을곳-->
+
+<body>
+    <div class="login_container">
+       <form>
+            <div class="input_box has_button" id="email_input_box">
+                <h3 class="input_title">아이디</h3>
+                <div class="input_item">
+                    <input type="text" class="input_content" name="mem_id" id="mem_id" placeholder="아이디를 입력해주세요." >
+                </div><!--.inputItem END-->
+                <p class="input_error" id="email_input_error">  </p>
+            </div><!--.input_box input_box END-->
+
+            <div class="input_box has_button" id="password_input_box">
+                <h3 class="input_title">비밀번호</h3>
+                <div class="input_item">
+                    <input type="password" class="input_content" name="mem_pw" id="mem_pw">
+                </div><!--.inputItem END-->
+                <p class="input_error" id="password_input_error">  </p>
+            </div><!--.input_box input_box END-->
+
+            <div class="login_btn_container">
+                <input type="submit" disabled="disabled" class="btn full solid disabled" id="loginBtn" value="로그인">
+                </input>
+<!--                <a type="button" class="btn btn_login_katalk full solid">-->
+<!--                    <div class="katalk"></div> 카카오톡으로 로그인-->
+<!--                </a>-->
+            </div><!--.login_btn_container END-->
+        </form>
+    
+        <ul class="account_container">
+            <li class="account_list"><a href="/join" class="account_link"> 회원 가입 </a></li>
+            <li class="account_list"><a href="/login/find_email" class="account_link"> 아이디 찾기 </a></li>
+            <li class="account_list"><a href="/login/find_password" class="account_link"> 비밀번호 찾기 </a></li>
+        </ul>
+    </div> <!--.login_container END-->
+
+<!--footer 넣을곳-->
+<!--footer 넣을곳-->
+
+</body>
+</html>
+<script src="/js/login/login.js"></script>

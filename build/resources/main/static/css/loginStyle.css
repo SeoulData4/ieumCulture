@@ -60,18 +60,10 @@ input {
 }
 
 .login_title {
-    padding-bottom: 2rem;
+    padding-bottom: 4.2rem;
     text-align: center;
-    font-size: 0;
-}
-
-.login_title:before {
-    content: "";
-    display: inline-block;
-    width: 250px;
-    height: 56px;
-    background: url(https://kream.co.kr/_nuxt/img/login_title.9f9ccc8.png) no-repeat;
-    background-size: 250px 56px;
+    font-size: 3.2rem;
+    color: #000;
 }
 
 .input_box {
@@ -108,7 +100,7 @@ input {
 }
 
 .solid {
-    background-color: #222;
+    background-color: #20581B;
     color: #fff;
     /* height: 50px; */
 }

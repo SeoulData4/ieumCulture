@@ -19,12 +19,12 @@ public class MainController {
 
     @GetMapping("login")
     public String login (Model model) {
-        return "/login/login2";
+        return "/member/login";
     }
 
     @GetMapping("join")
     public String join (Model model) {
-        return "/login/join";
+        return "/member/join";
     }
 
     @PostMapping("/loginOk")

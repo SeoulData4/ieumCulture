@@ -1,449 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>header</title>
-    <link rel="stylesheet" href="/css/header.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script defer src="/js/header.js"></script>
-  </head>
-  <body>
-    <header id="header" class="">
-      <h1 class="logo">
-        <a href="/">서울의 문화</a>
-      </h1>
-      <nav id="top_nav" class="navv">
-        <ul>
-          <li>
-            <a
-              href="/culture/culture/cultureEvent/list.do?searchCate=SHOW&amp;menuNo=200008"
-            >
-              문화행사</a
-            >
-            <ul class="depth">
-              <li>
-                <a
-                  href="/culture/culture/cultureEvent/list.do?searchCate=SHOW&amp;menuNo=200008"
-                  >공연</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureEvent/list.do?searchCate=EXHIBITION&amp;menuNo=200009"
-                >
-                  전시</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureEvent/list.do?searchCate=FESTIVAL&amp;menuNo=200010"
-                >
-                  축제</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureEvent/list.do?searchCate=EDUEXP&amp;menuNo=200011"
-                >
-                  교육/체험</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureEvent/list.do?searchCate=ETC&amp;menuNo=200013"
-                >
-                  기타</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href="/culture/culture/cultureImage/list.do?searchCate=PERFORMANCE&amp;menuNo=200014"
-            >
-              영상</a
-            >
-
-            <ul class="depth">
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=PERFORMANCE&amp;menuNo=200014"
-                >
-                  공연</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=EXHIBITION&amp;menuNo=200015"
-                >
-                  전시</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=FESTIVAL&amp;menuNo=200016"
-                >
-                  축제</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=LIVE&amp;menuNo=200017"
-                >
-                  라이브</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=CHILDREN&amp;menuNo=200093"
-                >
-                  어린이</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=EDUCATION&amp;menuNo=200018"
-                >
-                  교육/체험</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=VIRTUALREALITY&amp;menuNo=200019"
-                >
-                  VR</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=INTERVIEW&amp;menuNo=200020"
-                >
-                  인터뷰</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/culture/culture/cultureImage/list.do?searchCate=OTHER&amp;menuNo=200021"
-                >
-                  기타</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/culture/main/contents.do?menuNo=200028"> 문화정보</a>
-
-            <ul class="depth">
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200028">
-                  서울문화축제</a
-                >
-              </li>
-              <li>
-                <a href="/culture/bbs/B0000005/list.do?menuNo=200031">
-                  문화자료</a
-                >
-              </li>
-              <li>
-                <a href="/culture/culture/cultureSpace/list.do?menuNo=200025">
-                  문화공간</a
-                >
-              </li>
-              <li>
-                <a href="/culture/singl/artist/list.do?menuNo=200026">
-                  예술인/단체정보</a
-                >
-              </li>
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200037"> 문화정책</a>
-              </li>
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200100">
-                  비영리법인</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/culture/event/event/list.do?menuNo=200040"> 신청 참여</a>
-
-            <ul class="depth">
-              <li>
-                <a href="/culture/event/event/list.do?menuNo=200040"> 이벤트</a>
-              </li>
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200046">
-                  보신각 타종 신청</a
-                >
-              </li>
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200042">
-                  수문장 교대</a
-                >
-              </li>
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200096">
-                  서울거리공연</a
-                >
-              </li>
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200044">
-                  행사 홍보 신청</a
-                >
-              </li>
-              <li>
-                <a href="/culture/main/contents.do?menuNo=200045">
-                  문화공간등록 신청</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="/culture/bbs/B0000000/list.do?menuNo=200050"> 새소식</a>
-
-            <ul class="depth">
-              <li>
-                <a href="/culture/bbs/B0000000/list.do?menuNo=200050">
-                  공지사항</a
-                >
-              </li>
-              <li>
-                <a href="/culture/bbs/B0000001/list.do?menuNo=200051">
-                  보도자료</a
-                >
-              </li>
-              <li>
-                <a href="/culture/bbs/B0000002/list.do?menuNo=200052">
-                  채용공고</a
-                >
-              </li>
-              <li>
-                <a href="/culture/bbs/B0000003/list.do?menuNo=200086">
-                  e-문화알림</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="https://korean.visitseoul.net/index" id="visit-s" target="_blank"
-        >서울특별시청</a
-      >
-
-      <ul id="gnb" class="clearfix">
-        <li>
-          <button type="button" class="search-btn" id="search-menu">
-            검색
-          </button>
-        </li>
-        <li>
-          <button type="button" class="sitemap-btn" id="btn-menu">
-            메뉴열기
-          </button>
-        </li>
-      </ul>
-
-      <!-- 메뉴열기시 나오는 메뉴 -->
-      <div class="allmenu_m">
-        <div class="allmenu_m_wrap">
-          <div class="m_h_top">
-            <ul class="top_ui_m clearfix">
-              <li>
-                <a href="/culture/member/user/forLogin.do?menuNo=200058"
-                  >로그인</a
-                >
-              </li>
-              <li>
-                <a href="/culture/member/user/forLogin.do?menuNo=200058"
-                  >회원가입</a
-                >
-              </li>
-              <!-- 로그인시 나올 태그 -->
-              <!-- <li>
-                <a href="/culture/member/user/forLogin.do?menuNo=200058">로그아웃</a>
-              </li>
-              <li>
-                <a href="/culture/member/user/forLogin.do?menuNo=200058">마이페이지</a>
-              </li> -->
-            </ul>
-          </div>
-          <ul class="clearfix" id="depth1List_m">
-            <li>
-              <a href="" class="cate-first active">문화재</a>
-              <ul class="depth2List_m">
-                <li>
-                  <a
-                    href="/culture/culture/cultureEvent/list.do?searchCate=SHOW&amp;menuNo=200008"
-                    class="active"
-                    >하위갈래1</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureEvent/list.do?searchCate=EXHIBITION&amp;menuNo=200009"
-                    class="active"
-                  >
-                    하위갈래2</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureEvent/list.do?searchCate=FESTIVAL&amp;menuNo=200010"
-                    class="active"
-                    >하위갈래3</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureEvent/list.do?searchCate=EDUEXP&amp;menuNo=200011"
-                    class="active"
-                    >하위갈래4</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureEvent/list.do?searchCate=ETC&amp;menuNo=200013"
-                    class="active"
-                    >하위갈래5</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="cate-second" href="">문화행사 </a>
-              <ul class="depth2List_m">
-                <li>
-                  <a
-                    href="/culture/culture/cultureImage/list.do?searchCate=PERFORMANCE&amp;menuNo=200014"
-                    >하위갈래1</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureImage/list.do?searchCate=EXHIBITION&amp;menuNo=200015"
-                    >하위갈래2</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureImage/list.do?searchCate=FESTIVAL&amp;menuNo=200016"
-                    >하위갈래3</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureImage/list.do?searchCate=LIVE&amp;menuNo=200017"
-                    >하위갈래4</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/culture/culture/cultureImage/list.do?searchCate=CHILDREN&amp;menuNo=200093"
-                    >하위갈래5</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="cate-third" href="">후기</a>
-              <ul class="depth2List_m">
-                <li>
-                  <a href="/culture/main/contents.do?menuNo=200028"
-                    >하위갈래1</a
-                  >
-                </li>
-                <li>
-                  <a href="/culture/bbs/B0000005/list.do?menuNo=200031"
-                    >하위갈래2</a
-                  >
-                </li>
-                <li>
-                  <a href="/culture/culture/cultureSpace/list.do?menuNo=200025"
-                    >하위갈래3</a
-                  >
-                </li>
-                <li>
-                  <a href="/culture/singl/artist/list.do?menuNo=200026"
-                    >하위갈래4</a
-                  >
-                </li>
-                <li>
-                  <a href="/culture/singl/artist/list.do?menuNo=200026"
-                    >하위갈래5</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a class="cate-fourth" href="">새소식</a>
-              <ul class="depth2List_m">
-                <li>
-                  <a href="/culture/bbs/B0000000/list.do?menuNo=200050"
-                    >공지사항</a
-                  >
-                </li>
-                <li>
-                  <a href="/culture/bbs/B0000001/list.do?menuNo=200051"
-                    >보도자료</a
-                  >
-                </li>
-                <li>
-                  <a href="/culture/bbs/B0000002/list.do?menuNo=200052"
-                    >채용공고</a
-                  >
-                </li>
-                <li>
-                  <a href="/culture/bbs/B0000003/list.do?menuNo=200086"
-                    >e-문화알림</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <a href="#" class="close_m">닫기</a>
+<header  id="gnb-root">
+    <div class="header-container">
+        <div class="header-wrap align-position">
+            <a class="logo-wrap" href="/" aria-label="logo">
+                <span class="logo">
+                    <img src="/img/header-logo.svg" height="52">
+                </span>
+            </a>
+            <div class="center align-position">
+                <span class="search align-position center none">
+                    <form novalidate="" class="search-form">
+                        <input type="search" class="search-input"
+                            placeholder="검색어를 입력하세요.">
+                        </form>
+                    <button class="cancel button">취소</button>
+                </span>
+                <span>
+                    <button class="search-btn button align-position pointer">
+                        <svg width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.5999 10.5C3.5999 6.68926 6.68914 3.60002 10.4999 3.60002C14.3107 3.60002 17.3999 6.68926 17.3999 10.5C17.3999 14.3108 14.3107 17.4 10.4999 17.4C6.68914 17.4 3.5999 14.3108 3.5999 10.5ZM10.4999 2.40002C6.0264 2.40002 2.3999 6.02652 2.3999 10.5C2.3999 14.9735 6.0264 18.6 10.4999 18.6C12.5207 18.6 14.3687 17.86 15.7876 16.6362L20.5756 21.4243C20.81 21.6586 21.1899 21.6586 21.4242 21.4243C21.6585 21.19 21.6585 20.8101 21.4242 20.5758L16.6361 15.7877C17.8599 14.3688 18.5999 12.5208 18.5999 10.5C18.5999 6.02652 14.9734 2.40002 10.4999 2.40002Z"
+                                fill="#212124"></path>
+                        </svg>
+                    </button>
+                </span>
+                <span>
+                    <button class="list-btn right-btn button align-position pointer">
+                        <svg width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 5.00002C3 4.66865 3.26863 4.40002 3.6 4.40002H20.4C20.7314 4.40002 21 4.66865 21 5.00002C21 5.3314 20.7314 5.60002 20.4 5.60002H3.6C3.26863 5.60002 3 5.3314 3 5.00002Z"
+                                fill="#212124"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 12C3 11.6687 3.26863 11.4 3.6 11.4H20.4C20.7314 11.4 21 11.6687 21 12C21 12.3314 20.7314 12.6 20.4 12.6H3.6C3.26863 12.6 3 12.3314 3 12Z"
+                                fill="#212124"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 19C3 18.6687 3.26863 18.4 3.6 18.4H20.4C20.7314 18.4 21 18.6687 21 19C21 19.3314 20.7314 19.6 20.4 19.6H3.6C3.26863 19.6 3 19.3314 3 19Z"
+                                fill="#212124"></path>
+                        </svg>
+                    </button>
+                    <button class="list-cancel right-btn button align-position pointer none">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.57564 5.57573C5.80995 5.34142 6.18985 5.34142 6.42417 5.57573L11.9999 11.1515L17.5756 5.57573C17.81 5.34142 18.1899 5.34142 18.4242 5.57573C18.6585 5.81004 18.6585 6.18994 18.4242 6.42426L12.8484 12L18.4242 17.5757C18.6585 17.81 18.6585 18.1899 18.4242 18.4243C18.1899 18.6586 17.81 18.6586 17.5756 18.4243L11.9999 12.8485L6.42417 18.4243C6.18985 18.6586 5.80995 18.6586 5.57564 18.4243C5.34132 18.1899 5.34132 17.81 5.57564 17.5757L11.1514 12L5.57564 6.42426C5.34132 6.18994 5.34132 5.81004 5.57564 5.57573Z"
+                                fill="#212124"></path>
+                        </svg>
+                    </button>
+                </span>
+            </div>
         </div>
-      </div>
-      <div class="depth_bg"></div>
-    </header>
-    <div class="searchArea">
-      <form
-        name="searchTotFrm"
-        id="searchTotFrm"
-        action="/culture/search/search/list.do?menuNo=200079&amp;pageIndex=1"
-        method="post"
-      >
-        <ul>
-          <li>
-            <label for="searchTotCnd" class="hide">검색분류</label>
-            <select name="searchTotCnd" id="searchTotCnd" title="검색분류">
-              <option value="1">제목</option>
-              <option value="2">내용</option>
-              <option value="ALL">전체</option>
-            </select>
-          </li>
-          <li>
-            <label for="searchTotWord" class="hide">검색어</label>
-            <input
-              type="text"
-              name="searchTotWord"
-              id="searchTotWord"
-              placeholder="검색어를 입력하세요."
-              title="검색어"
-            />
-          </li>
-          <li>
-            <a href="#" class="searchArea__btn">검색</a>
-          </li>
-        </ul>
-        <button type="button" class="searchArea__close c1">닫기</button>
-      </form>
+        <nav class="small-nav nav-opacity">
+            <ul class="ul-position ul-style">
+                <li class="li-style">
+                    <a class="small-li-a text-none pointer point-color" href="">중고거래</a>
+                </li>
+                <li class="li-style">
+                    <a class="small-li-a text-none pointer" href="">동네가게</a>
+                </li>
+                <li class="li-style">
+                    <a class="small-li-a text-none pointer" href="">알바</a>
+                </li>
+                <li class="li-style">
+                    <a class="small-li-a text-none pointer" href="">부동산 직거래</a>
+                </li>
+                <li class="li-style">
+                    <a class="small-li-a text-none pointer" href="">중고차 직거래</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="shadow none"></div>
     </div>
-  </body>
-</html>
+</header>
+

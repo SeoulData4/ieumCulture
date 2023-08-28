@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ieum.ieumCulture.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Ieum.ieumCulture.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.seouldata.ieumCulture.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.seouldata.ieumCulture.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ieumCulture.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ieumCulture.main.iml" />
     </modules>

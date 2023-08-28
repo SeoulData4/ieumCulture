@@ -21,5 +21,6 @@ public class ReviewNone extends AuditingFields{
     private boolean isEvent;
     private String targetIdx;
     private String content;
+    private int star;
     // lk, images 추가 필요
 }

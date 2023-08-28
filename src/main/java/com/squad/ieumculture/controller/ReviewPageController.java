@@ -24,6 +24,7 @@ public class ReviewPageController {
 
     @GetMapping(path = "/create_review") // http://localhost:9999/create_review
     public ModelAndView create_review(ModelMap map){
+        map.addAttribute("target_idx", 0);
         return new ModelAndView("SeoulCultureReview");
     }
 

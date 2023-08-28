@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/SeoulCultureReview.css">
 </head>
 <body>
+<input id="target_idx" type="hidden" value="${target_idx}">
     <div class="wrapper">
         <main id="main" style="margin-top: 50px;">
             <section class="section bg-gray mb-30" style="background-color: white;">
@@ -22,6 +23,14 @@
                                     </div>
                                     <p class="descrption" style="padding: 12px 0 0 0;">레스토랑과 관련된 사진을 업로드 해주세요.</p>
                                     <p class="descrption" style="padding: 8px 0;">초상권 침해 사진의 경우 삭제할 수 있습니다.</p>
+                                    <div>
+                                        <input class="radio" type="radio" name="is_event" value="0" style="-webkit-appearance: button">문화재
+                                        <input class="radio" type="radio" name="is_event" value="1" style="-webkit-appearance: button">문화 행사
+                                    </div>
+                                    <div>
+                                        <input style="width: 45%;" type="text" id="temp_id" placeholder="임시 아이디를 입력하시오.">
+                                        <input style="width: 45%" type="password" id="temp_pw" placeholder="임시 비밀번호를 입력하시오.">
+                                    </div>
                                 </div>
                             </div>
                             <form action="/mydining/reserve/doneDetail" method="post" enctype="multipart/form-data">
@@ -34,7 +43,7 @@
                                     <div class="star-header" style="padding-left: 16px;">평균 별점</div>
                                     <div class="star">
                                         ★★★★★
-                                        <span class="star" style="width: 20%;">★★★★★</span>
+                                        <span id="star" class="star" style="width: 20%;">★★★★★</span>
                                         <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10" name="revScore">
                                     </div>
                                 </div>
@@ -48,7 +57,7 @@
                                                     <input type="file" name="file" class="hidden">
                                                     <input type="file" multiple="multiple" name="files" id="images" class="hidden">
                                                     <div class="image-wrapper" style="padding: 8px 0;">
-                                                        <label for="images"><img style="width:30px; height:30px; cursor: pointer; margin-top: 8px;" src="/images/file.png" alt=""></label>
+                                                        <label for="images"><img style="width:30px; height:30px; cursor: pointer; margin-top: 8px;" src="/img/file.png" alt=""></label>
                                                         <p class="upload-description">업로드</p>
                                                     </div>
                                                 </div>
@@ -61,7 +70,8 @@
                                     <!--                <button class="review-footer-revisit" type="button">✔ 재방문 할래요</button>-->
                                     <!--            </div>-->
                                     <div class="review-footer-register">
-                                        <button class="review-footer-register smBtn" style="width: 140px;"><input type="submit" class="hidden smBtn">✔ 등록
+                                        <button class="review-footer-register smBtn" style="width: 140px;" onclick="reviewSend()">
+                                            ✔ 등록
                                         </button>
                                     </div>
                                 </div>

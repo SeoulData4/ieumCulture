@@ -1,5 +1,7 @@
 /* detail.css */
-
+.radio:hover{
+    cursor: pointer;
+}
 .restaurant-reservation-detail .cancel-msg p {
     color: #666;
     line-height: 20px;

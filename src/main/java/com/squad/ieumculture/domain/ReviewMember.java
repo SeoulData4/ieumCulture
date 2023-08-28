@@ -20,6 +20,7 @@ public class ReviewMember extends AuditingFields{
     private boolean isEvent; // 0: 문화재, 1: 문화행사
     private String targetIdx;
     private String content;
+    private int star;
 
     @ManyToOne
     @JoinColumn(name = "member_idx")
